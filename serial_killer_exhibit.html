@@ -1,10 +1,248 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html><html lang="ja">
 <head>
-<meta charset="utf-8" />
-<title>歴史的に有名なシリアルキラー図鑑 | Online Exhibit</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>歴史的に有名なシリアルキラー図鑑 | Online Exhibit</title>
+  <meta name="description" content="歴史的に有名なシリアルキラーを、被害者への配慮を保ちながら史料に基づいて学ぶオンライン展示。スマホ最適・ダークモード・音声コマンド対応。" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='60' fill='%230ea5e9'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='72' fill='white' font-family='Arial'%3Eβ%3C/text%3E%3C/svg%3E" />
+  <meta property="og:title" content="歴史的に有名なシリアルキラー図鑑 | Online Exhibit" />
+  <meta property="og:description" content="史料ベースで学ぶ、ダークモード・音声コマンド対応のオンライン展示。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://picsum.photos/800/420" />
+  <style>
+    :root { --bg:#0b1220; --panel:#0f172a; --text:#e5e7eb; --muted:#9ca3af; --brand:#0ea5e9; --ring:rgba(14,165,233,.35); }
+    [data-theme="light"] { --bg:#f8fafc; --panel:#ffffff; --text:#0f172a; --muted:#475569; --brand:#0ea5e9; --ring:rgba(14,165,233,.35); }
+    * { box-sizing: border-box }
+    html, body { margin:0; padding:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif; background: var(--bg); color: var(--text); }
+    a { color: var(--brand); text-decoration: none }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px }
+    header.sticky { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: color-mix(in oklab, var(--bg) 75%, transparent); border-bottom: 1px solid color-mix(in oklab, var(--text) 10%, transparent) }
+    .nav { display:flex; align-items:center; gap:16px; padding: 14px 0 }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.02em }
+    .brand-badge { display:grid; place-items:center; width:32px; height:32px; border-radius:10px; background: var(--brand); color:white; font-weight:900 }
+    .spacer { flex:1 }
+    .btn, button.btn { background: var(--brand); color:white; border:0; padding:10px 14px; border-radius:12px; font-weight:600; box-shadow: 0 8px 20px -8px var(--ring); cursor:pointer }
+    .btn.outline { background: transparent; color: var(--text); border: 1px solid color-mix(in oklab, var(--text) 20%, transparent) }
+    .btn.ghost { background: transparent; color: var(--text) }
+    .hero { display:grid; gap:16px; grid-template-columns: 1.1fr .9fr; align-items:center; padding: 56px 0 }
+    .hero h1 { font-size: clamp(28px, 4vw, 48px); line-height: 1.1; margin: 0 }
+    .hero p.lead { color: var(--muted); font-size: clamp(15px, 1.6vw, 18px) }
+    .panel { background: var(--panel); border:1px solid color-mix(in oklab, var(--text) 8%, transparent); border-radius: 18px; padding: 18px }
+    .grid3 { display:grid; gap:16px; grid-template-columns: repeat(3, 1fr) }
+    .section { padding: 56px 0 }
+    .kicker { display:inline-block; font-weight:700; color: var(--brand); letter-spacing: .08em; text-transform: uppercase; font-size: 12px }
+    .cards .card { border-radius: 16px; background: var(--panel); border:1px solid color-mix(in oklab, var(--text) 8%, transparent); padding: 18px }
+    .gallery { display:grid; gap:12px; grid-template-columns: repeat(4, 1fr) }
+    .gallery img { width: 100%; height: 140px; object-fit: cover; border-radius: 12px; border:1px solid color-mix(in oklab, var(--text) 8%, transparent) }
+    .contact form { display:grid; gap:12px }
+    input, textarea { width: 100%; padding: 12px 14px; background: transparent; color: var(--text); border-radius: 12px; border: 1px solid color-mix(in oklab, var(--text) 20%, transparent) }
+    input:focus, textarea:focus { outline: 2px solid var(--ring) }
+    footer { padding: 36px 0; color: var(--muted); border-top: 1px solid color-mix(in oklab, var(--text) 10%, transparent) }
+    .muted { color: var(--muted) }
+    .badge { display:inline-flex; align-items:center; gap:8px; border:1px dashed color-mix(in oklab, var(--text) 16%, transparent); padding:8px 10px; border-radius: 999px; }
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .grid3 { grid-template-columns: 1fr; } .gallery { grid-template-columns: repeat(2, 1fr) } }
+  </style>
+  <script>
+    const userTheme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', userTheme);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "歴史的に有名なシリアルキラー図鑑",
+    "url": "https://example.com"
+  }
+  </script>
 </head>
-<body>
-<p>このファイルはデモ用です。本番のHTMLはキャンバスに保存されています。</p>
-</body>
+<body id="top">
+  <header class="sticky">
+    <div class="container nav">
+      <div class="brand"><span class="brand-badge">β</span> 歴史的に有名なシリアルキラー図鑑</div>
+      <nav class="spacer" aria-label="メイン">
+        <a href="#about" class="muted">方針</a>
+        <span class="muted">·</span>
+        <a href="#profiles" class="muted">主要人物</a>
+        <span class="muted">·</span>
+        <a href="#works" class="muted">資料</a>
+        <span class="muted">·</span>
+        <a href="#contact" class="muted">お問い合わせ</a>
+      </nav>
+      <button id="themeBtn" class="btn outline" aria-label="テーマ切替">ライト/ダーク</button>
+      <button id="micBtn" class="btn" aria-label="音声コマンド"><span>🎙️</span> 音声</button>
+    </div>
+  </header>  <main>
+    <section class="container hero">
+      <div class="text">
+        <span class="kicker">HISTORY & CONTEXT</span>
+        <h1>歴史的シリアルキラーを、冷静に学ぶオンライン展示</h1>
+        <p class="lead">被害者への配慮を第一に、推理や娯楽化を避け、史料に基づく事実関係・年表・社会背景を整理。スマホでも読みやすい1ページ構成、ダークモード、音声コマンド（「バトラー」）対応です。</p>
+        <div style="display:flex; gap:10px; margin-top:8px">
+          <a class="btn" href="#profiles">主要人物から見る</a>
+          <a class="btn ghost" href="#about">運営方針</a>
+        </div>
+        <p id="srStatus" class="muted" style="margin-top:10px">🎙️ 音声: オフ</p>
+        <div class="badge" style="margin-top:10px"><strong>音声コマンド</strong>：<span>「バトラー トップ」/「下へ」/「お問い合わせ」/「ダーク」/「ライト」/「リッパー」</span></div>
+      </div>
+      <div class="panel">
+        <img src="https://picsum.photos/800/560?grayscale" alt="展示のイメージ" style="width:100%; border-radius:12px"/>
+      </div>
+    </section><section id="about" class="section">
+  <div class="container">
+    <span class="kicker">GUIDE</span>
+    <h2 style="margin:.2em 0 0">このサイトの方針</h2>
+    <p class="muted">ここは歴史資料に基づいて、著名事件と加害者像を概観する学習サイトです。<br>グロテスクな描写は避け、一次・二次資料へのリンクを示します。被害者と遺族への敬意を忘れず、センセーショナルな表現を用いません。</p>
+    <div class="grid3 cards" style="margin-top:14px">
+      <div class="card"><h3>事実にもとづく</h3><p class="muted">事件年表・判決・当時の報道など、出典リンクを付与。</p></div>
+      <div class="card"><h3>社会背景を読む</h3><p class="muted">治安・都市環境・捜査手法など時代背景も解説。</p></div>
+      <div class="card"><h3>配慮ある表現</h3><p class="muted">暴力的・過度に刺激的な表現は抑えます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="profiles" class="section" aria-label="犯人像と事件の概要">
+  <div class="container">
+    <span class="kicker">PROFILES</span>
+    <h2 style="margin:.2em 0 0">主要人物（抜粋）</h2>
+    <div class="cards" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px">
+      <article class="card">
+        <h3>ジャック・ザ・リッパー（1888 / 英国）</h3>
+        <p class="muted">1888年ロンドンのホワイトチャペル地区で発生した連続殺人の通称。犯人は未特定で、いわゆる「カノニカル・ファイブ」を含む諸事件が議論の対象です。</p>
+        <ul class="muted"><li>被疑者不詳・未解決</li><li>史料：ヴィジランス委員会の挿絵、当時の新聞、警察文書</li></ul>
+        <p><a href="https://en.wikipedia.org/wiki/Jack_the_Ripper" target="_blank" rel="noopener">Wikipedia</a> ／ <a href="https://www.historyextra.com/period/victorian/your-guide-to-jack-the-ripper/" target="_blank" rel="noopener">HistoryExtra</a></p>
+      </article>
+      <article class="card">
+        <h3>H. H. ホームズ（1891–1894 / 米国）</h3>
+        <p class="muted">本名ハーマン・W・マジェット。詐欺や保険金目的の犯罪歴を持ち、シカゴ万博期の建物「いわゆるマーダー・キャッスル」の逸話で知られます（誇張・創作の可能性にも留意）。</p>
+        <ul class="muted"><li>1896年に処刑</li><li>詐欺・殺人で有罪</li></ul>
+        <p><a href="https://en.wikipedia.org/wiki/H._H._Holmes" target="_blank" rel="noopener">Wikipedia</a> ／ <a href="https://harpers.org/archive/1943/12/the-master-of-the-murder-castle/" target="_blank" rel="noopener">Harper's</a></p>
+      </article>
+      <article class="card">
+        <h3>アンドレイ・チカチーロ（1978–1990 / 旧ソ連）</h3>
+        <p class="muted">「ロストフの殺人鬼」。1992年に多数の殺人で有罪、1994年に銃殺刑。捜査の遅れには当時の社会事情や捜査体制も影響しました。</p>
+        <ul class="muted"><li>1992年 有罪・死刑判決</li><li>1994年 刑執行</li></ul>
+        <p><a href="https://en.wikipedia.org/wiki/Andrei_Chikatilo" target="_blank" rel="noopener">Wikipedia</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="works" class="section" aria-label="資料ギャラリー">
+  <div class="container">
+    <span class="kicker">ARCHIVE</span>
+    <h2 style="margin:.2em 0 0">参考写真・挿絵（公的資料中心）</h2>
+    <p class="muted">各画像は可能な限りWikimedia Commons等のパブリックドメイン／自由ライセンスに基づいて表示しています（画像の出典リンク参照）。刺激が強い写真は掲載しません。</p>
+    <div class="gallery" style="margin-top:14px">
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/With_the_Vigilance_Committee_in_the_East_End_-_A_Suspicious_Character.jpg/640px-With_the_Vigilance_Committee_in_the_East_End_-_A_Suspicious_Character.jpg" alt="1888年の挿絵：ホワイトチャペルの警戒委員会"/>
+        <figcaption class="muted" style="font-size:12px">The Illustrated London News (1888) via Wikimedia Commons</figcaption>
+      </figure>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/H._H._Holmes.jpg/640px-H._H._Holmes.jpg" alt="H. H. Holmes 1895年のマグショット"/>
+        <figcaption class="muted" style="font-size:12px">H. H. Holmes Mugshot (1895) via Wikimedia Commons</figcaption>
+      </figure>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Police_illustration_about_Jack_the_Ripper.jpg/640px-Police_illustration_about_Jack_the_Ripper.jpg" alt="ジャック・ザ・リッパーに関する19世紀の警察挿絵"/>
+        <figcaption class="muted" style="font-size:12px">19世紀の警察挿絵 via Wikimedia Commons</figcaption>
+      </figure>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Andrei_Chikatilo_mugshot.jpg/640px-Andrei_Chikatilo_mugshot.jpg" alt="アンドレイ・チカチーロのマグショット"/>
+        <figcaption class="muted" style="font-size:12px">Andrei Chikatilo (1990) via Wikimedia Commons</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact" aria-label="お問い合わせ">
+  <div class="container">
+    <span class="kicker">CONTACT</span>
+    <h2 style="margin:.2em 0 0">お問い合わせ</h2>
+    <div class="panel" style="margin-top:14px">
+      <form id="contactForm" onsubmit="fakeSubmit(event)">
+        <div class="grid3" style="grid-template-columns: 1fr 1fr">
+          <div>
+            <label for="name" class="muted">お名前</label>
+            <input id="name" name="name" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email" class="muted">メール</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+        </div>
+        <div>
+          <label for="msg" class="muted">ご用件</label>
+          <textarea id="msg" name="message" rows="5" required></textarea>
+        </div>
+        <div style="display:flex; gap:10px; align-items:center">
+          <button class="btn" type="submit">送信（デモ）</button>
+          <span id="formToast" class="muted" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between">
+      <small>© <span id="year"></span> 歴史的に有名なシリアルキラー図鑑</small>
+      <small class="muted">出典：各Wikipedia/史料リンク（画像はWikimedia Commonsほか）。暴力的描写は抑制しています。</small>
+    </div>
+  </footer>  <script>
+    // テーマ切替
+    const themeBtn = document.getElementById('themeBtn');
+    themeBtn?.addEventListener('click', () => {
+      const now = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', now);
+      localStorage.setItem('theme', now);
+    });
+
+    // 年表示
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // フェイク送信
+    function fakeSubmit(e){ e.preventDefault(); document.getElementById('formToast').textContent = '送信（デモ）: ローカル保存や送信先は未設定です。'; }
+
+    // 音声コマンド（Wake word: 「バトラー」）
+    const srStatus = document.getElementById('srStatus');
+    const micBtn = document.getElementById('micBtn');
+    let recognizing = false;
+    let woke = false;
+
+    function setSr(on){ recognizing = on; if(srStatus){ srStatus.textContent = on ? '🎙️ 音声: 待機中（「バトラー」で起動）' : '🎙️ 音声: オフ'; } }
+
+    micBtn?.addEventListener('click', startRecognition);
+
+    function startRecognition(){
+      const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if(!SR){ alert('このブラウザは音声認識に未対応です（Chrome/Edge/Android推奨）'); return; }
+      const r = new SR();
+      r.lang = 'ja-JP';
+      r.interimResults = false;
+      r.continuous = true;
+      woke = false;
+      setSr(true);
+      r.start();
+      r.onresult = (ev) => {
+        const transcript = Array.from(ev.results).map(x=>x[0].transcript.trim()).join(' ');
+        const norm = transcript.replace(/[\s　]/g,'');
+        if(!woke){
+          if(norm.includes('バトラー')){ woke = true; toast('起動しました。コマンドをどうぞ'); }
+          return;
+        }
+        if(/トップ|上|先頭/.test(norm)){ location.hash = '#top'; }
+        else if(/下|スクロール|次/.test(norm)){ window.scrollBy({top: window.innerHeight*0.8, behavior: 'smooth'}); }
+        else if(/お問い合わせ|コンタクト|メール/.test(norm)){ location.hash = '#contact'; }
+        else if(/ダーク/.test(norm)){ document.documentElement.setAttribute('data-theme','dark'); localStorage.setItem('theme','dark'); }
+        else if(/ライト|明るい/.test(norm)){ document.documentElement.setAttribute('data-theme','light'); localStorage.setItem('theme','light'); }
+        else if(/リッパー|ジャック/.test(norm)){ document.getElementById('profiles')?.scrollIntoView({behavior:'smooth'}); }
+        else { toast('不明なコマンドです'); }
+      };
+      r.onend = () => { if(recognizing){ r.start(); } };
+      r.onerror = () => { toast('音声認識エラー'); setSr(false); };
+    }
+
+    function toast(msg){ const t = document.getElementById('formToast'); if(t){ t.textContent = msg; setTimeout(()=>t.textContent='', 3000); } }
+  </script></body>
 </html>
